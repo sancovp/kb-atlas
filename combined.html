@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The floor — KB Atlas</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1><a href="index.html">KB ATLAS</a> / the floor</h1>
+<div class="sub">every module's strongest 120 concepts on one canvas;
+dashed gold = candidate bridges between modules</div></header>
+<div id="wrap"><canvas id="cv"></canvas>
+<aside><input id="q" placeholder="search concepts…">
+<h3>MODULES</h3><div class='c'><b style='color:#5ac8a8'>sourdough-baking-module</b></div><div class='c'><b style='color:#c85a7a'>restaurants-module</b></div></aside></div>
+<div id="tip"></div>
+<footer>Coherence, not truth. Grown by the dark floor.</footer>
+<script src="atlas.js"></script>
+<script>fetch('data/combined.json').then(r=>r.json()).then(d=>atlas('cv',d));</script>
+</body></html>
